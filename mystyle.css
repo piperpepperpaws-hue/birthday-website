@@ -1,26 +1,152 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww28300\viewh17140\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+h1{
+	text-align: center;
+	color: red;
+}
+h2 {
+	text-align: center;
+	color: red;
+}
 
-\f0\fs24 \cf0 /* CSS styles */\
-h1\{\
-  text-align: center;\
-  color: pink\
-\}\
-h2 \{\
-  text-align: center;\
-  color: pink\
-\}\
-h4 \{\
-  text-align: center;\
-  color: blue\
-\}\
-body \{\
- background-color: bab;\
-\}\
-form\{\
-  text-align:center\
-\}}
+h3 {color: white;}
+
+h4{text-align: center;}
+
+p {color: white;}
+
+li {color: white;}
+
+body {
+	background-image: url("_images/background.png");
+	background-color: #cccccc;
+}
+
+.messages-page p:nth-child(odd) {
+	text-align: left;
+	margin-right: 40%;
+}
+
+.messages-page p:nth-child(even) {
+	text-align: right;
+	margin-left: 40%;
+}
+
+.image_sidebar {
+	width:350px;
+	height:425px;
+	float: right;
+	border-radius: 5px;
+	margin-left:10px;
+	clear:right;
+	border: red 10px;
+	color: white
+}
+
+.image_row0 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster0.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+
+.image_row1 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster1.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+
+.image_row2 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster2.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+
+.image_row3 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster3.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+
+.image_row4 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster4.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+.image_row5 {
+	--tile: 150px;
+  
+	width: calc(var(--tile) * 9);
+	height: var(--tile);
+  
+	background-image: url("_images/hamster5.png");
+	background-repeat: repeat-x;
+	background-size: var(--tile) var(--tile);
+
+	margin: 40px auto;
+}
+
+.column {
+	float: left;
+	width: 49%;
+	padding: 5px;
+	text-align: center;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+  	display: table;
+}
+
+.container { 
+	height: 100px;
+	position: relative;
+}
+
+.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.front{
+	display: block;
+  	margin: auto;
+  	width: 50%;
+}
